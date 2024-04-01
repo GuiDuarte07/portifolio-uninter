@@ -109,7 +109,7 @@ body {
   gap: 2rem;
 }
 
-.degree_container div {
+.degree_container .degree {
   padding-bottom: 1rem;
   border-bottom: 1px solid white;
 }
@@ -194,7 +194,18 @@ textarea {
   background-color: #45a049;
 }
 
+.mylinks {
+  margin: 2rem 0;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
+.mylinks a {
+  color: yellow;
+  font-weight: bold;
+  padding: 0.2rem;
+}
 
 @media only screen and (max-width: 600px) {
   /* Coloque seus estilos para dispositivos móveis aqui */
@@ -281,6 +292,11 @@ textarea {
   }
   .project {
     flex-direction: column;
+  }
+
+  /* CONTACT */
+  .contact form {
+    margin: 0 1rem;
   }
   
 }

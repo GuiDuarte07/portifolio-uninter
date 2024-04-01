@@ -7,6 +7,7 @@
     <title>Guilherme Duarte - Portifolio</title>
   </head>
   <body>
+    <!-- Essa parte de header sera a navbar do projeto que será compartilhado com todas as páginas -->
     <header>
       <nav class="navbar">
         <div class="logo"><p>GD</p></div>
@@ -28,11 +29,16 @@
       </nav>
     </header>
 
+    <!-- Aqui é o contéudo principal da página, no caso, os dados sobre projetos -->
     <main class="main_container">
       <section class="projects">
         <h2 class="section_title">Meus Projetos</h2>
 
+        <!-- Div container onde ficará os dados de projetos -->
         <div class="projects_container">
+
+          <!-- Essa div tem um padrão repetitivo, então todo registro aqui (cada um equivale a um projeto difernte) 
+          terá essa mesma contrução (div.project > (div.project_image > img),(div.project_details > h3,p,a.project-acess)) -->
           <div class="project">
             <div class="project_image">
               <img src="images/1709122436448.jpeg" alt="Jogo dos números" srcset="">
