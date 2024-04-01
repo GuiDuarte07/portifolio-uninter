@@ -18,7 +18,10 @@ a {
 
 body {
   background-color: rgb(37, 37, 37);
+  overflow-x: hidden;
 }
+
+/* HEADER */
 
 .navbar {
   width: 100%;
@@ -55,6 +58,8 @@ body {
   margin-left: 3rem;
   padding-bottom: 4rem;
 }
+
+/* PORTIFOLIO */
 
 .introduction {
   margin: 3rem 0;
@@ -188,3 +193,95 @@ textarea {
 .contact input[type="submit"]:hover {
   background-color: #45a049;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  /* Coloque seus estilos para dispositivos móveis aqui */
+  /* Por exemplo: */
+  body {
+      font-size: 12px;
+  }
+
+  /* HEADER */
+  .navegations_links {
+    gap: 1rem;
+    
+  }
+  .logo {
+    padding-left: 1rem;
+  }
+  .navegations_links li:last-child {
+    padding-right: 1rem;
+  }
+  .main_container {
+    margin-left: 0;
+  }
+
+  /* PORTIFOLIO */
+  .introduction {
+    margin: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .introduction_details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .photo_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo_section img {
+    margin-top: 2rem;
+    margin-left: 0;
+    width: 60%;
+  }
+  .aboutme {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutme > * {
+    width: 70%;
+  }
+
+  /* DIPLOMAS */
+
+  .academic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .academic > * {
+    width: 70%;
+  }
+
+  /* PROJETOS */
+  
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects > * {
+    width: 70%;
+  }
+  .project {
+    flex-direction: column;
+  }
+  
+}
+
